@@ -1,24 +1,19 @@
 import { HomepageWrapper, CheckCard } from "./Homepage.style";
-import { useEffect, useState } from "react";
 
 const HomepageRender = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  useEffect(() => {
-    console.log("ONE RERENDER");
-  }, []);
-
-  useEffect(() => {
-    console.log("RERENDER EVERY TIME");
-  });
-
-  useEffect(() => {
-    console.log("CONDITIONAL RERENDER");
-  }, [isChecked]);
-
   return (
     <HomepageWrapper>
-      <CheckCard onClick={() => setIsChecked(!isChecked)}>Check!</CheckCard>
+      <div
+        style={{
+          gridArea: "main",
+          height: "100%",
+          width: "100%",
+          fontSize: "200px",
+          textAlign: "center",
+        }}
+      >
+        SALUT
+      </div>
     </HomepageWrapper>
   );
 };

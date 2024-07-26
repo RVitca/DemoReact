@@ -16,12 +16,12 @@ export const HomepageWrapper = styled.div`
 `;
 
 export const CheckCard = styled.button`
-  background-color: blue;
+  background-color: lightblue;
   grid-area: actions;
   display: block;
   color: black;
   height: 20px;
-  width: 50px;
+  width: 60px;
   margin-left: 10px;
   border-radius: 10px;
 `;
